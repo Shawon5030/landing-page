@@ -1,15 +1,19 @@
+<<<<<<< HEAD
+
+=======
 * {
   margin: 0;
   padding: 0;
   
 }
+>>>>>>> a4fccbd263b9796cc4ffe338fe272169f2fab4a0
 
 body {
   font-family: Arial, sans-serif;
   background-color: white;
   color: #333;
-  width: 100%; /* Ensure body takes full width */
-  max-width: 100%; /* Prevent horizontal overflow */
+  width: 100vw; /* Ensure body takes full width */
+  /* Prevent horizontal overflow */
   overflow-x: hidden; /* Disable horizontal scrolling */
 }
 
@@ -19,6 +23,7 @@ header {
   padding: 0px 50px;
   background-color: #1c1c1c;
   color: white;
+  width: 100vw;
 }
 
 .logo img {
@@ -614,179 +619,33 @@ section, header, footer {
 }
 
 @media (max-width: 768px) {
-  body {
-    display: flex;
-    flex-direction: column;
-    width: 100%; /* Ensure body takes full width */
-    max-width: 100%; /* Prevent horizontal overflow */
-    overflow-x: hidden; /* Disable horizontal scrolling */
-  }
+ body{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+ }
+ .product-header {
+  display: flex;
 
-  header {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    width: 100%; /* Ensure header fits within the viewport */
-  }
-
-  .product-info,
-  .vampire-product-info,
-  .delivery-section {
-    flex-direction: column;
-    text-align: center;
-    padding: 20px;
-    width: 100%; /* Ensure sections fit within the viewport */
-    max-width: 100%; /* Prevent overflow */
-  }
-
-  .details h1 {
-    font-size: 24px;
-    margin-bottom: 15px;
-  }
-
-  .details p {
-    font-size: 16px;
-    margin-bottom: 15px;
-  }
-
-  .product-image img {
-    width: 100%; /* Ensure images scale properly */
-    margin: 0 auto;
-  }
-
-  .vampire-product-icons {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-  }
-
-  .delivery-section img {
-    width: 150px;
-    margin-bottom: 15px;
-  }
-
-  .delivery-section p {
-    font-size: 18px;
-  }
-
-  .clientScreenShortInner {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .carousel img {
-    width: 100%; /* Ensure carousel images scale properly */
-    margin: 0 auto;
-  }
-
-  .product-item {
-    flex-direction: column;
-    gap: 15px;
-    width: 100%; /* Ensure product items fit within the viewport */
-    max-width: 100%; /* Prevent overflow */
-  }
-  body{
-    width: 130%;
-  }
-
-  .product-img {
-    width: 80px;
-    height: 80px;
-  }
-
-  .order-section {
-    padding: 15px;
-    width: 100%; /* Ensure order section fits within the viewport */
-    max-width: 100%; /* Prevent overflow */
-  }
-
-  h2 {
-    font-size: 24px;
-  }
-
-  h3 {
-    font-size: 18px;
-  }
-
-  .billing-details input {
-    font-size: 14px;
-  }
-
-  .submit-order {
-    font-size: 16px;
-    padding: 12px;
-  }
+  justify-content: center;
+  align-items: center;
+  gap: 20%;
+  padding-top: 30px;
 }
-
-@media (max-width: 480px) {
-  body {
-    width: 100%; /* Ensure body takes full width */
-    max-width: 100%; /* Prevent horizontal overflow */
-    overflow-x: hidden; /* Disable horizontal scrolling */
-  }
-
-  .logo img {
-    height: 50px;
-    width: 50px;
-  }
-
-  header {
-    padding: 15px;
-    width: 100%; /* Ensure header fits within the viewport */
-    max-width: 100%; /* Prevent overflow */
-  }
-
-  .product-info,
-  .vampire-product-info {
-    padding: 10px;
-    width: 100%; /* Ensure sections fit within the viewport */
-    max-width: 100%; /* Prevent overflow */
-  }
-
-  .details h1 {
-    font-size: 20px;
-  }
-
-  .details p {
-    font-size: 14px;
-  }
-
-  .product-item {
-    gap: 15px;
-    width: 100%; /* Ensure product items fit within the viewport */
-    max-width: 100%; /* Prevent overflow */
-  }
-
-  .product-img {
-    width: 60px;
-    height: 60px;
-  }
-
-  .delivery-section img {
-    width: 100%; /* Ensure images scale properly */
-  }
-
-  .delivery-section p {
-    font-size: 16px;
-  }
-
-  .submit-order {
-    font-size: 14px;
-    padding: 10px;
-  }
-
-  footer p {
-    font-size: 12px;
-    width: 100%; /* Ensure footer fits within the viewport */
-    max-width: 100%; /* Prevent overflow */
-  }
-  .product-details-container {
-    align-items: center;
-    gap: 15px;
-    display: flex
+.product-item {
+  display: flex
 ;
-    justify-content: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+  gap: 5%;
+}
+.product-info {
+  display: grid
+;
+grid-template-columns: 1fr
+;
+gap: 5%;
+overflow: hidden;
 }
 }
+
