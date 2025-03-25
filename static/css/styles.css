@@ -629,11 +629,10 @@ section, header, footer {
   padding-top: 30px;
 }
 .product-item {
-  display: flex
-;
-  justify-content: space-between;
+  display: grid;
   padding: 10px 10px;
   gap: 5%;
+  margin-bottom: 10px;
 }
 .product-info {
   display: grid
@@ -643,5 +642,13 @@ grid-template-columns: 1fr
 gap: 5%;
 overflow: hidden;
 }
+.product-item{
+  width: 90vw;
+}
+.vampire-product-icons{
+  margin: auto;
+}
+.details h1 {
+  font-size: 17px;}
 }
 
