@@ -1,0 +1,1 @@
+web: gunicorn Landing_page_Backend.wsgi:application --preload --bind 0.0.0.0:$PORT

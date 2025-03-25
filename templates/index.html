@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vampire Blood Checkout</title>
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS (CDN) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Choices.js CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+    />
+
+    <!-- Slick CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+  </head>
+  <style>
+    body{
+      
+    }
+  </style>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="logo">
+        <img src="{% static 'images/logo_dl.jpg' %}" alt="Zahab Logo" />
+      </div>
+      <button class="call-button">Call</button>
+    </header>
+
+    <!-- Product Details Section -->
+    <section class="product-info">
+      <div class="product-image">
+        <img
+          src="{{pic.picture.url}}"
+          alt="Vampire Blood Perfume"
+        />
+      </div>
+      <div class="details">
+        <h1>
+          "অধিক ছড়াবে এবং দীর্ঘক্ষন থাকবে,<br />
+          এমন স্মেল যা নজর কাড়বে সবার"
+        </h1>
+        <p>
+          <strong>Vampire Blood</strong> বাংলাদেশের প্রথম আমদানিকারক Retailer.
+        </p>
+        <ul class="checkboxes">
+          <li>তাই সর্বোচ্চ কোয়ালিটি এবং আস্থার প্রথম স্থানে আমরাই।</li>
+          <li>৮-১৬ ঘণ্টা এর ও অধিক সময় জুড়ে কাপড়ে লাস্টিং।</li>
+          <li>১-৮ ফিট পর্যন্ত ঘ্রাণ ছড়াবে ইনশা-আল্লাহ।</li>
+          <li>
+            প্রিমিয়াম অভিজাত্যে ডার্ক বেরি, ভ্যানিলা আর সুইট ফ্রেশের অসাধারণ
+            কম্বিনেশন।
+          </li>
+        </ul>
+        <button class="order-btn">অর্ডার করুন</button>
+      </div>
+    </section>
+
+    <section class="vampire-product-info">
+      <div class="vampire-product-icons">
+        <div class="vampire-icon">
+          <p>লাইফিং এবং সেলের দিন থাকতে আকিসম</p>
+          <i class="fa-solid fa-briefcase"></i>
+          <!-- Replaced with briefcase icon -->
+        </div>
+        <div class="vampire-icon">
+          <p>লাইফিং এবং সেলের দিন থাকতে আকিসম</p>
+          <i class="fa-solid fa-leaf"></i>
+          <!-- Leaf icon -->
+        </div>
+        <div class="vampire-icon">
+          <p>লাইফিং এবং সেলের দিন থাকতে আকিসম</p>
+          <i class="fa-solid fa-tree"></i>
+          <!-- Crown icon -->
+        </div>
+      </div>
+
+      <div class="vampire-product-image">
+        <img
+          src="{% static 'images/products/VB-Stage-2.webp' %}"
+          alt="Vampire Blood Perfume"
+        />
+      </div>
+
+      <div class="vampire-product-icons">
+        <div class="vampire-icon">
+          <p>মিটিং কিভাবে প্রেজেন্টেশন আপনার মিটিং কিভাবে প্রেজেন্টেশন আপনার</p>
+          <i class="fa-solid fa-laptop"></i>
+          <!-- Laptop icon -->
+        </div>
+        <div class="vampire-icon">
+          <p>লাইফিং এবং সেলের দিন থাকতে আকিসম</p>
+          <i class="fa-solid fa-crown"></i>
+          <!-- Store icon -->
+        </div>
+        <div class="vampire-icon">
+          <p>লাইফিং এবং সেলের দিন থাকতে আকিসম</p>
+          <i class="fa-solid fa-mosque"></i>
+          <!-- Building icon -->
+        </div>
+      </div>
+    </section>
+
+    <section class="delivery-section">
+      <p class="delivery-text">
+        12 বা 15 M.L অর্ডার করলে সারাদেশে ফ্রি ডেলিভারি
+      </p>
+      <img
+        src="{% static 'images/pngimg.com-free_shipping_PNG42-Small.webp' %}"
+        alt="Free Delivery Image"
+      /><br />
+      <div class="delivery-button-container">
+        <button>অর্ডার করুন</button>
+      </div>
+    </section>
+
+    <section class="clientScreenShort">
+      <div class="container_ss">
+        <div class="clientScreenShortMain">
+          <h2 class="sub_title text-center">Customer Reviews</h2>
+          <div class="clientScreenShortInner">
+            <div class="carousel">
+              <div>
+                <img src="{% static 'images/carosel-img/Z-R-07.webp' %}" alt="Image 1" />
+              </div>
+              <div>
+                <img src="{% static 'images/carosel-img/Z-R-02.webp' %}" alt="Image 2" />
+              </div>
+              <div>
+                <img src="{% static 'images/carosel-img/Z-R-05.webp' %}" alt="Image 3" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="cod_money">
+        <img src="{% static 'images/cod-money.webp' %}" alt="Payment Image" />
+        <h2>পন্য হাতে পেয়ে, টেস্ট করে, মূল্য পরিশোধ করুন</h2>
+      </div>
+    </section>
+
+    <section class="order-section">
+      <form id="order-form">
+          <div class="order-summary">
+              <h2>অর্ডার করার জন্য ফর্মটি পূর্ণ করুন</h2>
+              <h3>পণ্যের সাইজ নির্বাচন করুন</h3>
+              <div class="product-selection">
+                  <div class="product-header">
+                      <span>Product</span>
+                      <span>Quantity</span>
+                      <span>Price</span>
+                  </div>
+                  <hr class="hr-line" />
+                  {% for product in products %}
+                  <div class="product-item">
+                      <div class="product-info-container">
+                          <input type="checkbox" id="product{{ product.id }}" name="product" value="{{ product.id }}" checked />
+                          <img src="{{ product.image.url }}" alt="{{ product.name }}" class="product-img" />
+                          <label for="product{{ product.id }}" class="product-info-p">
+                              <div class="product-text">
+                                  <span class="product-name">{{ product.name }}</span>
+                                  <span class="product-size">{{ product.size }} ml</span>
+                              </div>
+                          </label>
+                      </div>
+                      <div class="product-details-container">
+                          <div class="quantity">
+                              <button type="button" class="quantity-btn decrease-btn" data-id="{{ product.id }}">-</button>
+                              <span id="quantity-{{ product.id }}">1</span>
+                              <button type="button" class="quantity-btn increase-btn" data-id="{{ product.id }}">+</button>
+                          </div>
+                          <div class="product-details">
+                              <span class="product-price" id="price-{{ product.id }}">{{ product.price }}৳</span>
+                          </div>
+                      </div>
+                  </div>
+                  {% endfor %}
+              </div>
+              <div class="order-summary">
+                  <div class="order-row">
+                      <span>Subtotal</span>
+                      <span class="bdt" id="subtotal">{{ products.0.price }}৳</span>
+                  </div>
+                  <div class="order-row">
+                      <span>Shipping</span>
+                      <div class="shipping-options">
+                        <label class="shipping-option">
+                            <input type="radio" name="shipping" value="60" data-label="Inside Dhaka" id="shipping-inside" onchange="updateTotal()" />
+                            <span>ঢাকার ভিতরে ডেলিভারি চার্জ:</span>
+                            <span class="bdt">60.00৳</span>
+                        </label>
+                        <label class="shipping-option">
+                            <input type="radio" name="shipping" value="120" data-label="Outside Dhaka" id="shipping-outside" checked onchange="updateTotal()" />
+                            <span>ঢাকার বাইরে ডেলিভারি চার্জ:</span>
+                            <span class="bdt">120.00৳</span>
+                        </label>
+                    </div>
+                  </div>
+                  <div class="order-row total">
+                      <span>Total</span>
+                      <span class="bdt" id="total-price">{{ products.0.price }}৳</span>
+                  </div>
+              </div>
+              <div class="billing-details">
+                  <h3>Billing details</h3>
+                  <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+                  <label for="name">আপনার নাম *</label>
+                  <input type="text" id="name" name="name" required placeholder="Enter your name" />
+                  <label for="address">আপনার ঠিকানা *</label>
+                  <input type="text" id="address" name="address" required placeholder="Enter your address" />
+                  <label for="phone">আপনার ফোন নাম্বার *</label>
+                  <input type="text" id="phone" name="phone" required placeholder="Enter your phone number" />
+              </div>
+              <div class="payment-method">
+                  <h3>Pay with cash on delivery</h3>
+                  <input type="radio" id="cash" name="payment" value="cash" checked />
+                  <label for="cash">Cash on delivery</label><br /><br />
+                  <button type="submit" class="submit-order">অর্ডার নিশ্চিত করুন</button>
+              </div>
+          </div>
+      </form>
+  </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2025 Mahmudul Haque Shawon. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function updateTotal() {
+          let subtotal = 0;
+          document.querySelectorAll(".product-item").forEach(item => {
+              if (item.querySelector("input[type=checkbox]").checked) {
+                  let productId = item.querySelector(".increase-btn").dataset.id;
+                  let quantity = parseInt(document.getElementById(`quantity-${productId}`).textContent);
+                  let price = parseFloat(document.getElementById(`price-${productId}`).textContent.replace("৳", ""));
+                  subtotal += quantity * price;
+              }
+          });
+  
+          document.getElementById("subtotal").textContent = subtotal.toFixed(2) + "৳";
+          let shippingCost = parseFloat(document.querySelector("input[name=shipping]:checked").value);
+          let total = subtotal + shippingCost;
+          document.getElementById("total-price").textContent = total.toFixed(2) + "৳";
+      }
+  
+      document.querySelectorAll(".increase-btn, .decrease-btn").forEach(button => {
+          button.addEventListener("click", function () {
+              let productId = this.dataset.id;
+              let action = this.classList.contains("increase-btn") ? "increase" : "decrease";
+              let quantityElement = document.getElementById(`quantity-${productId}`);
+              let currentQuantity = parseInt(quantityElement.textContent);
+  
+              quantityElement.textContent = action === "increase" ? currentQuantity + 1 : Math.max(1, currentQuantity - 1);
+              updateTotal();
+          });
+      });
+  
+      document.querySelectorAll("input[type=checkbox], input[name=shipping]").forEach(input => {
+          input.addEventListener("change", updateTotal);
+      });
+  
+      document.querySelector(".submit-order").addEventListener("click", function (e) {
+          e.preventDefault();
+          let selectedProducts = [];
+          document.querySelectorAll(".product-item").forEach(item => {
+              if (item.querySelector("input[type=checkbox]").checked) {
+                  let productId = item.querySelector(".increase-btn").dataset.id;
+                  let quantity = parseInt(document.getElementById(`quantity-${productId}`).textContent);
+                  selectedProducts.push({ id: productId, quantity: quantity });
+              }
+          });
+  
+          let orderData = {
+              name: document.getElementById("name").value,
+              address: document.getElementById("address").value,
+              phone: document.getElementById("phone").value,
+              shipping: document.querySelector("input[name=shipping]:checked").value,
+              payment: document.querySelector("input[name=payment]:checked").value,
+              products: selectedProducts,
+          };
+  
+          fetch("/submit-order/", {
+              method: "POST",
+              headers: { "Content-Type": "application/json", "X-CSRFToken": document.querySelector("input[name=csrfmiddlewaretoken]").value },
+              body: JSON.stringify(orderData)
+          })
+          .then(response => response.json())
+          .then(data => {
+              if (data.message) {
+                  window.location.reload();
+              }
+          })
+          .catch(error => console.error("Error:", error));
+      });
+  
+      updateTotal();
+  </script>
+  
+  
+
+
+    <!-- Custom JS -->
+    <script src="{% static 'js/choices.min.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+    <!-- Slick Carousel CSS -->
+
+    <!-- Slick Carousel JS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+  </body>
+</html>
